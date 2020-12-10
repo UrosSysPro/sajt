@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    height: 100vh;
+
+}
+
+.section1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* transform: translate(-20%,-20%); */
+}
+.section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.05),transparent);
+}
+.section1 .container{
+    max-width: 70rem;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.logo span{
+    font-weight: 300;
+}
+.hamburger-menu{
+    width: 1.5rem;
+    height: 1.5rem;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.bar{
+    position: relative;
+    width: 1.2rem;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+.bar:before , .bar:after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 1.5rem;
+    height: 4px;
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+}
+.bar:before{
+    transform: translateY(8px);
+}
+.bar:after{
+    transform: translateY(-8px);
+}
+.big-title{
+    position: absolute;
+    z-index: 100;
+    top: calc(50% - 7rem);
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* transform: translateX(-50%); */
+    font-size: 5rem;
+    font-weight: 600;
+}
+.shadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background:linear-gradient(to top,#151515,transparent);
+    /* background-color: blue; */
+}
+
+
+/* ////////////////////section 2 */
+
+
+
+
+.section2{
+    width: 100%;
+    background-color: #151515;
+}
+.section2 .container > *{
+    margin: 2rem;
+}
+.section2 .container{
+    /* max-width: 50rem; */
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    color: white;
+}
+.content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+.border{
+    width: 30%;
+    height: 3px;
+    background-color:white;
+}
+
+
+@media(max-width:1050px){
+    .section2 .container{
+        grid-template-columns: repeat(1,1fr);
+        padding:3rem 1rem ;
+        /* grid-template-rows: repea; */
+    }
+    .big-title{
+        font-size: 3rem;
+    }
+    .imgContainer{
+        max-width: 100%;
+    }
+    .imgContainer img{
+        max-width: 100%;
+        width: 100%;
+
+    }
+}
