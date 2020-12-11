@@ -1,5 +1,5 @@
-let popUpWindow=document.getElementsByClassName("popUpWindow")[0];
-let frame=document.getElementsByTagName('iframe')[0];
+let popUpWindow;
+let frame;
 function otvori(a){
     popUpWindow.style.top="0";
     console.log(frame);
@@ -7,4 +7,9 @@ function otvori(a){
 }
 function zatvori(){
     popUpWindow.style.top="100%";
+}
+function load(){
+    popUpWindow=document.getElementsByClassName("popUpWindow")[0];
+    frame=document.getElementsByTagName('iframe')[0];
+    document.body.scrollIntoView();
 }
