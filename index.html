@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="container">
+        <h1>things</h1>
+        <div class="menu">
+            <button onclick="otvori('https://urossyspro.github.io/sajt/forma')">Forma</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/galerijaSlike')">Galerija (grid)</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/drugaGalerija')">Galerija (flex)</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/momentumScrolling')">Momentum Scrolling</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/parallaxScrolling')">Parallax Scrolling</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/responsiveGrid')">Responsive Grid</button>
+            <button onclick="otvori('https://urossyspro.github.io/sajt/talasi')">Waves</button>
+        </div>
+        <div class="popUpWindow">
+            <div class="backBtn" onclick="zatvori()">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <iframe src="#" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
